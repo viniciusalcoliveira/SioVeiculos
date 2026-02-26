@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sio Veículos | Sua Concessionária de Confiança</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header id="header">
+    <div class="container header-content">
+        <a href="index.html" class="logo-link">
+            <img src="SIO_VEICULOS-removebg-preview.png" alt="Sio Veículos Logo" class="header-logo">
+        </a>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="#estoque">Estoque</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="https://www.instagram.com/sioveiculos/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i> Instagram</a>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="btn-primary" onclick="abrirModal()">
+            <i class="fa-solid fa-car"></i> Avalie seu Veículo
+        </button>
+
+        <div class="mobile-menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+</header>
+<section class="hero">
+        <div class="hero-overlay">
+            <div class="container hero-text">
+                <h2>Qualidade e Procedência Garantida</h2>
+                <p>Encontre o carro ideal para você com a segurança que só a Sio Veículos oferece.</p>
+                <a href="#estoque" class="btn-outline">Ver Estoque Completo</a>
+            </div>
+        </div>
+    </section>
+
+   <section id="estoque" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h3>Nosso Estoque</h3>
+                <p>Confira nossos veículos selecionados. Clique no card para mais informações. VEM PRA SIÔ VEÍCULOS</p>
+            </div>
+<section id="estoque" class="section-padding">
+<div class="container">
+<div class="grid-veiculos">
+
+<!-- CARD -->
+<div class="card-veiculo" id="carro-1">
+<div class="card-img-container">
+<button class="carousel-btn prev-btn" onclick="mudarFoto('carro-1', -1)">&#10094;</button>
+<img src="gOL 1.0.jpeg" class="card-img active">
+<button class="carousel-btn next-btn" onclick="mudarFoto('carro-1', 1)">&#10095;</button>
+</div>
+<div class="card-info">
+<h4>VOLKSWAGEN/GOL 1.0 FLEX</h4>
+<p class="ano">2022/2023</p>
+<div class="specs">
+<span><i class="fa-solid fa-road"></i> 87.000 km</span>
+<span><i class="fa-solid fa-gas-pump"></i> Flex.</span>
+<span><i class="fa-solid fa-gear"></i> Manual.</span>
+</div>
+<span class="preco">R$ 62.000,00</span>
+<div class="card-footer">
+<a href="javascript:void(0)" onclick="interessadoZap('VOLKSWAGEN/GOL 1.0 FLEX')" class="btn-zap-card">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+</div>
+</div>
+</div>
+
+
+<!-- DUPLICAÇÃO EXEMPLO -->
+<div class="card-veiculo" id="carro-2">
+<div class="card-img-container">
+<img src="WhatsApp Image 2026-02-03 at 11.46.12.jpeg" class="card-img active">
+</div>
+<div class="card-info">
+<h4>SUZUKI VITARA 1.6 16V 4YOU</h4>
+<p class="ano">2019</p>
+<div class="specs">
+<span><i class="fa-solid fa-road"></i> 55.000 km</span>
+<span><i class="fa-solid fa-gas-pump"></i> Gasolina.</span>
+<span><i class="fa-solid fa-gear"></i> Automático.</span>
+</div>
+<span class="preco">R$ 89.000,00</span>
+<div class="card-footer">
+<a href="javascript:void(0)" onclick="interessadoZap('VITARA 2019')" class="btn-zap-card">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+</div>
+</div>
+</div>
+
+<div class="card-veiculo" id="carro-3">
+<div class="card-img-container">
+<img src="Saveiro.jpeg" class="card-img active">
+</div>
+<div class="card-info">
+<h4>VW/Saveiro CD Cross 1.6 16V Flex (REPASSE) </h4>
+<p class="ano">2015/2016</p>
+<div class="specs">
+<span><i class="fa-solid fa-road"></i> 112.000 km</span>
+<span><i class="fa-solid fa-gas-pump"></i> Flex.</span>
+<span><i class="fa-solid fa-gear"></i> Manual.</span>
+</div>
+<span class="preco">R$ 60.000,00</span>
+<div class="card-footer">
+<a href="javascript:void(0)" onclick="interessadoZap('CIVIC 2010')" class="btn-zap-card">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+</div>
+</div>
+</div>
+
+<div class="card-veiculo" id="carro-3">
+<div class="card-img-container">
+<img src="TIGO.jpeg" class="card-img active">
+</div>
+<div class="card-info">
+<h4>CHERY TIGGO 2.0 AUTOMÁTICO (REPASSE)</h4>
+<p class="ano">2014/2015</p>
+<div class="specs">
+<span><i class="fa-solid fa-road"></i> 124.000 km</span>
+<span><i class="fa-solid fa-gas-pump"></i> Flex.</span>
+<span><i class="fa-solid fa-gear"></i> Automático.</span>
+</div>
+<span class="preco">R$ 28.000,00</span>
+<div class="card-footer">
+<a href="javascript:void(0)" onclick="interessadoZap('ONIX 2020')" class="btn-zap-card">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+</div>
+</div>
+</div>
+
+
+<div class="card-veiculo" id="carro-3">
+<div class="card-img-container">
+<img src="tr4.jpeg" class="card-img active">
+</div>
+<div class="card-info">
+<h4>MITSUBISHI PAJERO TR4 2.0 4x4 TURBO (REPASSE) </h4>
+<p class="ano">2007</p>
+<div class="specs">
+<span><i class="fa-solid fa-road"></i> 0 km</span>
+<span><i class="fa-solid fa-gas-pump"></i> Flex.</span>
+<span><i class="fa-solid fa-gear"></i> Manual.</span>
+</div>
+<span class="preco">R$ 70.000,00</span>
+<div class="card-footer">
+<a href="javascript:void(0)" onclick="interessadoZap('TR4 TURBO')" class="btn-zap-card">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+</div>
+</div>
+</div>
+
+<div class="card-veiculo" id="carro-3">
+<div class="card-img-container">
+<img src="jimmy.jpeg" class="card-img active">
+</div>
+<div class="card-info">
+<h4>SUZUKI JIMNY 4ALL 1.3 4x4</h4>
+<p class="ano">2010</p>
+<div class="specs">
+<span><i class="fa-solid fa-road"></i> 150.250 km</span>
+<span><i class="fa-solid fa-gas-pump"></i> Flex.</span>
+<span><i class="fa-solid fa-gear"></i> Manual.</span>
+</div>
+<span class="preco">R$ 59.990,00</span>
+<div class="card-footer">
+<a href="javascript:void(0)" onclick="interessadoZap('JIMMY')" class="btn-zap-card">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+</div>
+</div>
+</div>
+
+<div class="card-veiculo" id="carro-3">
+<div class="card-img-container">
+<img src="KICKS.jpeg" class="card-img active">
+</div>
+<div class="card-info">
+<h4>NISSAN KICKS S 1.6 16V (REPASSE)</h4>
+<p class="ano">2017/2018</p>
+<div class="specs">
+<span><i class="fa-solid fa-road"></i> 78.000 km</span>
+<span><i class="fa-solid fa-gas-pump"></i> Flex.</span>
+<span><i class="fa-solid fa-gear"></i> Automático.</span>
+</div>
+<span class="preco">R$ 66.000,00</span>
+<div class="card-footer">
+<a href="javascript:void(0)" onclick="interessadoZap('KICKS 2018 (REPASSE)')" class="btn-zap-card">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+</div>
+</div>
+</div>
+
+<div class="card-veiculo" id="carro-3">
+<div class="card-img-container">
+<img src="TRACKER.jpeg" class="card-img active">
+</div>
+<div class="card-info">
+<h4>CHEVROLET TRACKER PREMIER 1.4 TURBO</h4>
+<p class="ano">2018</p>
+<div class="specs">
+<span><i class="fa-solid fa-road"></i> 121.000 km</span>
+<span><i class="fa-solid fa-gas-pump"></i>Flex.</span>
+<span><i class="fa-solid fa-gear"></i> Automático.</span>
+</div>
+<span class="preco">R$88.000,00</span>
+<div class="card-footer">
+<a href="javascript:void(0)" onclick="interessadoZap('CHEVROLET TRACKER PREMIER 1.4 TURBO')" class="btn-zap-card">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+</div>
+</div>
+</div>
+
+<div class="card-veiculo" id="carro-3">
+<div class="card-img-container">
+<img src="TITANO.jpeg" class="card-img active">
+</div>
+<div class="card-info">
+<h4> FIAT TITANO RANCH 2.2 16V 4x4 TURBO DIESEL</h4>
+<p class="ano">2024/2025</p>
+<div class="specs">
+<span><i class="fa-solid fa-road"></i> 27.000km</span>
+<span><i class="fa-solid fa-gas-pump"></i> Diesel.</span>
+<span><i class="fa-solid fa-gear"></i> Automático.</span>
+</div>
+<span class="preco">R$ 189.000,00</span>
+<div class="card-footer">
+<a href="javascript:void(0)" onclick="interessadoZap('FIAT TITANO RANCH 2.2 16V 4x4 TURBO DIESEL')" class="btn-zap-card">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+</div>
+</div>
+</div>
+
+<div class="card-veiculo" id="carro-3">
+<div class="card-img-container">
+<img src="CLIO.jpeg" class="card-img active">
+</div>
+<div class="card-info">
+<h4> RENAULT CLIO RL / AUTH</h4>
+<p class="ano">2016</p>
+<div class="specs">
+<span><i class="fa-solid fa-road"></i> 159.000 km</span>
+<span><i class="fa-solid fa-gas-pump"></i> Flex.</span>
+<span><i class="fa-solid fa-gear"></i> Manual.</span>
+</div>
+<span class="preco">R$ 36.500,00</span>
+<div class="card-footer">
+<a href="javascript:void(0)" onclick="interessadoZap('RENAULT CLIO RL / AUTH')" class="btn-zap-card">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+</div>
+</div>
+</div>
+
+<div class="card-veiculo" id="carro-2">
+<div class="card-img-container">
+<img src="mercedes.jpeg" class="card-img active">
+</div>
+<div class="card-info">
+<h4>MERCEDES-BENZ GLC 220D 4MATIC (REPASSE)</h4>
+<p class="ano">2021</p>
+<div class="specs">
+<span><i class="fa-solid fa-road"></i> 78.000 km</span>
+<span><i class="fa-solid fa-gas-pump"></i> Diesel.</span>
+<span><i class="fa-solid fa-gear"></i> Automático.</span>
+</div>
+<span class="preco">R$ 235.000,00</span>
+<div class="card-footer">
+<a href="javascript:void(0)" onclick="interessadoZap('MERCEDES-BENZ GLC 220D 4MATIC')" class="btn-zap-card">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+</div>
+</div>
+</div>
+
+<div class="card-veiculo" id="carro-2">
+<div class="card-img-container">
+<img src="Sprint.jpeg" class="card-img active">
+</div>
+<div class="card-info">
+<h4> I/M. BENS 517 SPRINTER VAN E.L.T.A – 18 LUGARES (REPASSE) </h4>
+<p class="ano">2023/2024</p>
+<div class="specs">
+<span><i class="fa-solid fa-road"></i> 208.123 km</span>
+<span><i class="fa-solid fa-gas-pump"></i> Diesel.</span>
+<span><i class="fa-solid fa-gear"></i> Manual.</span>
+</div>
+<span class="preco">R$ 336.804,00</span>
+<div class="card-footer">
+<a href="javascript:void(0)" onclick="interessadoZap('I/M. BENS 517 SPRINTER VAN E.L.T.A – 18 LUGARES (REPASSE)')" class="btn-zap-card">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container footer-content">
+<div class="footer-logo">
+<img src="SIO_VEICULOS-removebg-preview.png" style="height:60px">
+<p>Transparência e segurança na compra e venda do seu veículo.</p>
+</div>
+<div class="footer-contact">
+<h3>Contato</h3>
+<p><i class="fa-brands fa-whatsapp"></i> (98) 98460-9395</p>
+<p><i class="fa-brands fa-instagram"></i> @sioveiculos</p>
+<p><i class="fa-solid fa-location-dot"></i> Shopping do Automóvel – Calhau</p>
+</div>
+</div>
+</footer>
+
+<a href="https://wa.me/5598984609395" class="whatsapp-float" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+const telefoneLoja = "5598984609395";
+
+function interessadoZap(carro){
+const msg = `Olá! Tenho interesse no veículo *${carro}*. Pode me passar mais informações?`;
+window.open(`https://wa.me/${telefoneLoja}?text=${encodeURIComponent(msg)}`,"_blank");
+}
+</script>
+
+</body>
+</html>
